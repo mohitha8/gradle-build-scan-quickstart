@@ -1,4 +1,5 @@
 node{
+    echo "${BRANCH_NAME}"
     stage("compile"){
    checkout([$class: 'GitSCM', branches: [[name: "*/${BRANCH_NAME}"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/gradle/gradle-build-scan-quickstart.git']]])
 }
