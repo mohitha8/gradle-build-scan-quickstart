@@ -1,6 +1,6 @@
 node{
     stage("compile"){
-   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/gradle/gradle-build-scan-quickstart.git']]])
+   checkout([$class: 'GitSCM', branches: [[name: '*/']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/gradle/gradle-build-scan-quickstart.git']]])
 }
     stage("build"){
         
