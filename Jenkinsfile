@@ -10,7 +10,8 @@ properties([
 
 node{
     env.custom_var       = "custom_value"
-    echo "custom variable value is ${custom_var}"
+  def paramname = "paramValue";
+    echo "custom variable value is ${paramname}"
    echo "param1 vallue is ${param1}"
   echo "param2 value is ${param2}"
     stage("compile"){
