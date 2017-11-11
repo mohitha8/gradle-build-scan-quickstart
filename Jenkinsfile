@@ -9,8 +9,8 @@ properties([
 ])
 
 node{
-    
-    echo "${BRANCH_NAME}"
+    env.custom_var       = "custom_value"
+    echo "custom variable value is ${custom_var}"
    echo "param1 vallue is ${param1}"
   echo "param2 value is ${param2}"
     stage("compile"){
