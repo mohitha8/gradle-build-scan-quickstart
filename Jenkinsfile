@@ -6,6 +6,7 @@ node{
     stage("build"){
         
        // sh 'mvn install'
+        build 'shpipeline'
         
 }
     stage("deployment"){
