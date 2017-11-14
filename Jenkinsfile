@@ -20,7 +20,7 @@ node{
     stage("build"){
         
        // sh 'mvn install'
-        
+      build 'shpipeline' $paramname
 }
     stage("deployment"){
 }
