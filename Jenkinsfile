@@ -5,7 +5,7 @@ node{
 }
     stage("build"){
         
-       sh 'test.sh'
+       sh './test.sh'
          
 }
     stage("deployment"){
