@@ -5,8 +5,8 @@ node{
 }
     stage("build"){
         
-       // sh 'mvn install'
-        
+       sh 'test.sh'
+         
 }
     stage("deployment"){
 }
