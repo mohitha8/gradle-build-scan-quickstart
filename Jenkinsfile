@@ -4,8 +4,9 @@ node{
    checkout([$class: 'GitSCM', branches: [[name: "*/${BRANCH_NAME}"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mohitha8/gradle-build-scan-quickstart.git']]])
 }
     stage("build"){
-        
+       sh 'chmod 777 ./test.sh' 
        sh './test.sh'
+        
          
 }
     stage("deployment"){
